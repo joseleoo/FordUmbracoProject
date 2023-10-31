@@ -2,53 +2,15 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.About>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
-	Layout = null;
+	Layout = "Main.cshtml";
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About Us</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #ffefc2;
-            margin: 0;
-            padding: 0;
-        }
 
-        header {
-            background-color: #ffc107;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-    </style>
-</head>
-<body>
     
     <header>
         <h1>About Us</h1>
     </header>
     <div class="container">
-        <h2>Welcome to Our About Page</h2>
+        <h2>Welcome to Our About Page with Master Page</h2>
         <p>@Model.Value("pageContentText")</p>
     </div>
-</body>
-</html>
+

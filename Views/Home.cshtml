@@ -2,10 +2,8 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
-	Layout = null;
+	Layout = "Main.cshtml";
 }
-<html>
-    <body>
-        <h1>@Model.Value("pageContentText")</h1>
-    </body>
-</html>
+
+<h1>@Model.Value("pageContentText")</h1>
+
